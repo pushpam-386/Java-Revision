@@ -1,0 +1,12 @@
+Q2) Can we create an instance of Enum outside of Enum itself?
+Explain your answer.
+
+
+Answer--> InstanceOf==The instanceof in java is also known as type comparison
+operator because it compares the instance with type. 
+It returns either true or false.
+
+No, you can not create enum instances outside of the 
+Enum boundary, because Enum doesn't have any public 
+constructor, and the compiler doesn't allow you to 
+provide any public constructor in Enum.

@@ -1,0 +1,11 @@
+Both expression gives you String object, but there is subtle difference between them.
+When you use new String( "Hello World!!" ); , it explicitly creates a new and referentially
+distinct instance of a String object. It is an individual instance of the java.lang.String
+class. String s="Hello World!!"; may reuse an instance from the string constant pool if one
+is available (String Pool is a pool of Strings stored in Java heap memory ).
+
+Example:-
+
+String str1 = "Hello World!!";
+String str2 = "Hello World!!";
+System.out.println(str1 == str2);  // true

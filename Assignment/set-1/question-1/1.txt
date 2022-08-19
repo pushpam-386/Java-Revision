@@ -1,0 +1,15 @@
+JRE-->JRE (Java Runtime Environment) is the implementation of JVM and is defined as a 
+software package that provides Java class libraries, along with Java Virtual Machine (JVM),
+and other components to run applications written in Java programming.
+
+
+JVM-->JVM (Java Virtual Machine) is an abstract machine that is platform-dependent and has
+three notions as a specification, a document that describes requirement of JVM implementation,
+implementation, a computer program that meets JVM requirements, and instance, an
+implementation that executes Java byte code provides a runtime environment for executing Java
+byte code.
+
+
+JDK-->JDK (Java Development Kit) is a software development kit to develop applications in 
+Java. In addition to JRE, JDK also contains number of development tools 
+(compilers, JavaDoc, Java Debugger etc.).
