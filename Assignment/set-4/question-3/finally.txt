@@ -1,0 +1,91 @@
+Finalize-->Since the Object class contains the finalize method, hence finalize method is available for every Java class
+since Object is the superclass of all Java classes.
+Since it is available for every java class hence Garbage Collector can call finalize method on any Java object Now,
+the finalize method which is present in the Object class, has an empty implementation, in our class clean-up
+activities are there, then we have to override this method.
+
+class Hello {
+	public static void main(String[] args)
+	{
+		String s = new String("RR");
+		s = null;
+
+		// Requesting JVM to call Garbage Collector method
+		System.gc();
+		System.out.println("Main Completes");
+	}
+
+	// Here overriding finalize method
+	public void finalize()
+	{
+		System.out.println("finalize method overridden");
+	}
+}
+
+Final---->>final (lowercase) is a reserved keyword in java. We can’t use it as an identifier,
+as it is reserved. We can use this keyword with variables, methods, and also with classes.
+The final keyword in java has a different meaning depending upon whether it is applied to a variable, class, or method.
+
+
+final class G {
+
+
+	final void h() {}
+
+	static int j = 30;
+
+public static void main(String[] args)
+	{
+		// See modified contents of variable j.
+		j = 36;
+		System.out.println(j);
+	}
+}
+
+Finally---->>Just as final is a reserved keyword, so in the same way finally is also a reserved keyword in java
+i.e, we can’t use it as an identifier. The finally keyword is used in association with a try/catch block and
+guarantees that a section of code will be executed, even if an exception is thrown. The final block will be executed
+after the try and catch blocks, but before control transfers back to its origin.
+
+// A Java program to demonstrate finally.
+class Geek {
+	// A method that throws an exception and has finally.
+	// This method will be called inside try-catch.
+	static void A()
+	{
+		try {
+			System.out.println("inside A");
+			throw new RuntimeException("demo");
+		}
+		finally
+		{
+			System.out.println("A's finally");
+		}
+	}
+
+	// This method also calls finally. This method
+	// will be called outside try-catch.
+	static void B()
+	{
+		try {
+			System.out.println("inside B");
+			return;
+		}
+		finally
+		{
+			System.out.println("B's finally");
+		}
+	}
+
+	public static void main(String args[])
+	{
+		try {
+			A();
+		}
+		catch (Exception e) {
+			System.out.println("Exception caught");
+		}
+		B();
+	}
+}
+

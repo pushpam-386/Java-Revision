@@ -1,0 +1,21 @@
+Q.1(b). 
+Answer-->
+Checked Exception--The exception that are checked at the compile time.
+		 -If some code the eception then it must be either handaled 
+                  or it must specify the epexception using throws keywords.
+		 -There are two types of checked exception: fully and parttially
+		  checked exception.
+
+ 
+example-->IOException, Interrupted Exception.
+
+
+
+
+Unchecked Exception--this exception is not checked at compile time.
+		    -This exception can be handaled by try and catch block or 
+		     by thowing the exception and handled later.
+		    -As checked exceptions are better as it is handaled at 
+		     compile time only.
+
+example--> Arithmatic Exception, ClassNotFound Eception.
